@@ -1,0 +1,240 @@
+body{
+	font-family: 'Ubuntu', serif;
+    color:#232123;
+    margin: 0;
+    padding: 0;
+
+
+}
+.offset:before{
+display:block;
+content: "";
+height: 4rem;
+margin-top: -4rem;
+
+
+}
+/*---- nav---*/
+.navbar{
+
+text-transform: uppercase;
+font-size: 1.3rem;
+letter-spacing: .1rem;
+background-color: #FFFFFF;
+background:  rgba(114,0,80,.7)!important;
+
+}
+.navbar-brand img{
+	margin-left: 3rem;
+	height: 3rem;
+}
+.navbar-nav li{
+padding-right:3rem;
+
+}
+.navbar-dark .navbar-nav .nav-link{
+	color:#e4e4e4;
+	padding-top: .8rem;
+
+}
+.nav-item a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	height: 1px;
+	transform: scale(0);
+	transition: all .3s;
+}
+.nav-item a:hover::after{
+	transform: scale(1);
+	background-color: #7a85c9;
+	
+
+}
+
+
+.jumbotron {
+	background-color: #FBD1FF;
+}
+
+
+
+.card {
+	background: #fff;
+}
+.card img{
+	height: 50vh;
+}
+
+/*---- land---*/
+.home-inner{
+	background-image: url(../img/126.jpg);
+
+
+}
+.headline{
+	width: 100%;
+	max-width:100%; 
+	position: absolute;
+	top: 45%;
+	z-index: 1;
+	
+
+}
+.headline h1{
+	color:#e4e4e4;
+	text-transform: uppercase;
+	font-size:3.5rem;
+	letter-spacing: .3rem; 
+	text-shadow:.2rem .2rem .8rem black;
+}
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+.card {
+	border: none;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.homepage{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.limited{
+	width: 90%;
+	margin: 3rem auto;
+	padding-top: 1rem;
+	
+}
+
+.heading{
+font-size: 2rem;
+text-transform: uppercase;
+margin-bottom: 2rem;
+margin-top: 2rem;
+}
+.clients img{
+	width: 100%;
+	border-radius: 50%;
+
+
+}
+
+/*.txt {
+	background-color: #000;
+}*/
+
+.clients{
+	background-color: #FBD1FF;
+}
+.clients-hr{
+	border-top: .05rem solid red;
+}
+.btn{
+	border-radius:.4rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	padding: .6rem 1.2rem;
+	margin-top: 2rem;
+		color:#8C0050;
+border-width:.1rem;
+	border-color: #8C0050; 
+	justify-content: center;
+background-color:transparent; /*-- делает кнопку прозрачной задай цвет --*/
+	text-align: center;
+}
+.btn:hover{
+	background-color:#e4e4e4;
+	border-color: #373437;
+	color:#373437;
+}
+
+#contact{
+	
+background: #720050;
+	font-size: 1.3rem;
+	 color: #fff;
+}
+#contact h3{
+	 color: #fff;
+}
+#contact i{
+  color: #e4e4e4;
+}
+#contact i:hover{
+  color:  #1ebba3;
+}
+
+
+.btnby {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 5px;
+	background-color: #FF91FE;
+}
+
+
+
+
+@media(max-width:767px){
+	.headline h1{
+	color:#e4e4e4;
+	text-transform: uppercase;
+	font-size:1.5rem;
+	letter-spacing: .3rem;
+	text-shadow:.2rem .2rem .8rem black;
+margin-top: 5%;
+}
+.heading{
+	font-size: 1.5rem;
+}
+
+.navbar-brand img{
+	margin-left: 1rem;
+	height: 2rem;
+}
+
+.card img{
+	height: 30vh;
+}
+
+}
